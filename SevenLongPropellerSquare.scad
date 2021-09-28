@@ -11,14 +11,16 @@ translate([0,0,-5])
     
 hull(){
 
-cylinder(d=6,h=4,center=true);
-    translate([14,0,0])
-    cylinder(d=4,h=4,center=true);
-    translate([-14,0,0])
-    cylinder(d=4,h=4,center=true);
+translate([0,0,-1.5])
+cylinder(d=6,h=5,center=true, $fn=64);
+    translate([14,0,-1.5])
+    cylinder(d=4,h=5,center=true, $fn=64);
+    translate([-14,0,-1.5])
+    cylinder(d=4,h=5,center=true, $fn=64);
 }
 
-cylinder(d=7,h=4,center=true);
+translate([0,0,-1.5])
+cylinder(d=7.2,h=5,center=true, $fn=64);
 
 //Small Holes
 translate([20,0,0])
