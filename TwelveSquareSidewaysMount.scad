@@ -1,3 +1,7 @@
+union() {
+
+
+
 difference() {
 sidex=30;
 sidey=50;
@@ -48,15 +52,10 @@ translate([0,0,-10])
   
   
   //Side holes Middle
-
-  translate([10,-20,0])
+translate([10,-20,0])
   rotate([90,0,90])
-   cylinder(d=cylinder_small, h=70,$fn=64,center=true);
-
-  
-   
+   cylinder(d=cylinder_small, h=70,$fn=64,center=true);  
        //Big Holes
-
 translate([10,-20,0])
   rotate([90,0,90])
    cylinder(d=screw_head_m3, h=20,$fn=64);
@@ -64,4 +63,43 @@ translate([10,-20,0])
   
  
  
+}
+
+difference() {
+//Feet
+translate([0,-20,-10])
+    cube([30,10,10],center=true);
+translate([0.1,-20,-10])
+    cube([10.2,10.2,10.2],center=true);
+    
+    
+  //Feet Side holes Middle
+  translate([10,-20,-10])
+  rotate([90,0,90])
+   cylinder(d=3.4, h=70,$fn=64,center=true); 
+       //Feet Big Hole
+translate([10,-20,-10])
+  rotate([90,0,90])
+   cylinder(d=5.8, h=20,$fn=64);
+//Feet Strange Hole
+translate([-20.1,-20,-10])
+    rotate([0,90,0])
+   cylinder(d=2*(5.5+0.4) / sqrt(3), h=20,$fn=6, center=true);   
+
+}
+
+
+difference(){
+    //Top Cylinder Bue
+    cylinder(d=15,h=10,center=true);
+    translate([0,-10,0])
+    cube([25,29,10.5],center=true);
+}
+   
+/**
+difference()
+//Top Cube
+translate([0,10,0])
+cube([10,10,10],center=true);
+**/
 }
