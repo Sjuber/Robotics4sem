@@ -11,7 +11,11 @@ union() {
 
 cube([sidex,sidey,height], center=true);    
 // Short side
-cube([9.6, 69.6, 20], center=true);   
+translate([30, 0, 0])
+    cube([9.6, 69.6, 20], center=true);   
+translate([-30, 0, 0])
+    cube([9.6, 69.6, 20], center=true);   
+
     }
     
 translate([0, 0, 4.2])

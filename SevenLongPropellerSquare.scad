@@ -45,12 +45,12 @@ cylinder(d=screw_m3_size,h=screw_m3_length,center=true, $fn=6);
 
 //Fire små huller
 translate([12,0,0])
-cylinder(d=1.5, h=8, center = true, $fn=64);
+cylinder(d=1.5, h=12, center = true, $fn=64);
 translate([-12,0,0])
-cylinder(d=1.5, h=8, center = true, $fn=64);
+cylinder(d=1.5, h=12, center = true, $fn=64);
 translate([8.5,0,0])
-cylinder(d=1.5, h=8, center = true, $fn=64);
+cylinder(d=1.5, h=12, center = true, $fn=64);
 translate([-8.5,0,0])
-cylinder(d=1.5, h=8, center = true, $fn=64);
+cylinder(d=1.5, h=12, center = true, $fn=64);
 
 }
