@@ -55,10 +55,10 @@ translate([105,65,-0.1])
 difference(){
 translate([-9.99,0,0])
 cube([10,30,12]);
-translate([-4.99,30.01,5])
+translate([-4.99,30.01,7])
     rotate([90,0,0])
     cylinder(h=4,d=dumb_number,$fn=6);
-translate([-4.99,30.01,5])
+translate([-4.99,30.01,7])
     rotate([90,0,0])
     cylinder(h=100,d=3.4,$fn=64);
 }
@@ -66,10 +66,10 @@ translate([-4.99,30.01,5])
 difference(){ 
 translate([109.99,0,0])
 cube([10,30,12]);
-translate([114.99,30.01,5])
+translate([114.99,30.01,7])
     rotate([90,0,0])
     cylinder(h=4,d=dumb_number,$fn=6);
-translate([114.99,30.01,5])
+translate([114.99,30.01,7])
     rotate([90,0,0])
         cylinder(h=100,d=3.4,$fn=64);
 }
