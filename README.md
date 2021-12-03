@@ -9,3 +9,10 @@
 ### 6. RS370SideMount ( Attach to the side ) 
 ### 7. ServoMotorMount ( ServoMotor SG90 Top mount, vertical attached )
 ### 8. SevenLongPropellerSquare ( Servo propelarm, attach to moving part )
+
+
+#### Exams: Jobs to do:
+#### All components to Java.
+#### Tobias repo: https://github.com/tgrundtvig/OpenBuildSystem/tree/master/OpenBuildSystemJava/src/org/abstractica/openbuildsystem/library/parts/printed 
+#### Java API to Steppermotor functionality, using MQQT protocol. 
+##### Functionality: Steppermotor turn left, & Steppermotor turn right.
